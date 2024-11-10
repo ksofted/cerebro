@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #formnav{
+            color: white;
+            background-color: rgb(39, 7, 82);
+        }
+        #formnav:active{
+            color: white;
+        }
+        .navbar-brand, .nav-link{
+            color: white;
+        }
+        .footer{
+            color: white;
+            background-color: rgb(39, 7, 82);
+            text-align: center;
+            font-size: 20px;
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            padding: 17px;
+        }
+        a{
+            text-decoration: none;
+        }
+        #nn #nlink {
+            color: white;
+        }
+        #brand{
+            color: white;
+           pointer-events: none;
+        }
+        #tog{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " id="formnav">
+        <div class="container">
+            <span class="navbar-brand" id="nbrand">Application form </span>
+            <button class="navbar-toggler bg-light" id="tog"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nn">
+                    <li class="nav-item">
+            
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nlink">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html" id="nlink">Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nlink">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" id="nlink">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</nav>
+<div class="container my-5">
+    <form>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <label for="inputFirstName" class="form-label">NIN</label>
+                <input type="text" class="form-control" id="nin" placeholder="Enter NIN">
+            </div>
+            <div class="col-md-4">
+                <label for="inputFirstName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="modu babagana">
+            </div>
+            <div class="col-md-4">
+                <label for="inputLastName" class="form-label">Father's Full Name</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="chiroma mohammed">
+            </div>
+            <div class="col-md-4">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPhone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="inputPhone" placeholder="123-456-7890">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Residential Address</label>
+                <input type="text" class="form-control" id="RAddress" placeholder="garadai">
+            </div>
+            <div class="col-md-4">
+                <label for="inputFirstName" class="form-label">State Of Origin</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Borno State">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Local Government</label>
+                <input type="text" class="form-control" id="lcg" placeholder="Marte">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Ward</label>
+                <input type="text" class="form-control" id="ward" placeholder="Mawulli">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Unit</label>
+                <input type="text" class="form-control" id="unit" placeholder="Mugum">
+            </div>
+            <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Upload Photo</label>
+                <input type="file" class="form-control" id="photo">
+            </div>
+        </div>
+        <div class="row g-3 mt-3">
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Submit Application</button>
+            </div>
+        </div>
+    </form>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Indegene Portal. All rights reserved.</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

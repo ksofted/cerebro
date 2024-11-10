@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sybil detection</title>
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .dashboard-container {
+            margin-top: 20px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgb(39, 7, 82);
+            padding: 20px 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+       
+        #formnav{
+            color: white;
+            background-color: rgb(39, 7, 82);
+        }
+        #nbrand, #nlink{
+            color: white;
+        }
+        #nn #nlink {
+            color: white;
+        }
+        #nbrand{
+            color: white;
+           pointer-events: none;
+        }
+        #tog{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Header (Navigation Bar) -->
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm" id="formnav">
+    <div class="container">
+        <span class="navbar-brand" id="nbrand">Indegene Portal</span>
+        <button class="navbar-toggler bg-light" id="tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="nn">
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="application.html" id="nlink">NOT an Indegene</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nlink">Forget Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nlink">Report Issue</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br><br>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Sybil Detection Test</h1>
+    <form>
+        <!-- Compulsory Questions -->
+        <div class="mb-5">
+            <h2>Compulsory Questions</h2>
+
+            <div class="mb-3">
+                <label for="chairman" class="form-label">1. Who is the current chairman of Marte Local Government?</label>
+                <input type="text" class="form-control" id="chairman" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="popularTown" class="form-label">2. State the most popular town of Marte Local Government.</label>
+                <input type="text" class="form-control" id="popularTown" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="populatedMarket" class="form-label">3. Between Kulli, Karenuwa, and Garadai, which has the most populated market?</label>
+                <select class="form-select" id="populatedMarket" required>
+                    <option selected disabled>Choose an option</option>
+                    <option value="Kulli">Kulli</option>
+                    <option value="Karenuwa">Karenuwa</option>
+                    <option value="Garadai">Garadai</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">4. Marte and Garadai are two separate provinces and are under different local governments (yes/no)</label>
+                <select class="form-select" required>
+                    <option selected disabled>Choose an answer</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">5. Furiye refers to which of the following categories?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="furiyeCategory" id="option1" value="Clay sand" required>
+                    <label class="form-check-label" for="option1">a) Clay sand</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="furiyeCategory" id="option2" value="Water">
+                    <label class="form-check-label" for="option2">b) Water</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="furiyeCategory" id="option3" value="Kuluwuu">
+                    <label class="form-check-label" for="option3">c) Kuluwuu</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional Questions -->
+        <div class="mb-5">
+            <h2>Optional Questions</h2>
+
+            <div class="mb-3">
+                <label for="villageHead" class="form-label">1. Who is your village head?</label>
+                <input type="text" class="form-control" id="villageHead">
+            </div>
+
+            <div class="mb-3">
+                <label for="schoolInfo" class="form-label">2. Do you have a school in your village? If yes, who is the principal of the school?</label>
+                <input type="text" class="form-control" id="schoolInfo">
+            </div>
+
+            <div class="mb-3">
+                <label for="grandparents" class="form-label">3. What are your grandparents' names?</label>
+                <input type="text" class="form-control" id="grandparents">
+            </div>
+
+            <div class="mb-3">
+                <label for="birthPlace" class="form-label">4. Were you born in Marte Local Government? If yes, state the village.</label>
+                <input type="text" class="form-control" id="birthPlace">
+            </div>
+
+            <div class="mb-3">
+                <label for="relativeVillages" class="form-label">5. State five villages where your relatives live in Marte Local Government.</label>
+                <textarea class="form-control" id="relativeVillages" rows="3"></textarea>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit Test</button>
+        </div>
+    </form>
+</div><br>
+<footer class="footer">
+    <p>&copy; 2024 Indegene Portal. All rights reserved.</p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

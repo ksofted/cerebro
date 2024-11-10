@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .dashboard-container {
+            margin-top: 20px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgb(39, 7, 82);
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+       
+        #formnav{
+            color: white;
+            background-color: rgb(39, 7, 82);
+        }
+        .navbar-brand, .nav-link{
+            color: white;
+        }
+        #nn #nlink {
+            color: white;
+        }
+        #nbrand{
+            color: white;
+           pointer-events: none;
+        }
+        #tog{
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Header (Navigation Bar) -->
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm" id="formnav">
+    <div class="container">
+        <span class="navbar-brand" id="nbrand">Indegene Portal</span>
+        <button class="navbar-toggler bg-light" id="tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="nn">
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="application.html" id="nlink">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"id="nlink">Forget Password</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="nlink">Report Issue</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><br><br><br><br>
+<div class="container mt-4" style="max-width: 500px;">
+    <!-- Card for Login Form -->
+    <div class="card shadow-lg login-container">
+        <div class="card-body">
+            <h4 class="card-title text-center">User Login</h4>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Indegene Portal. All rights reserved.</p>
+</footer>
+<!-- Local Bootstrap JS and dependencies -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
